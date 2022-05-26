@@ -1,17 +1,25 @@
 import React from 'react'
 import chomik from '../img/chomik.gif'
+import {Link} from 'react-router-dom'
+
 function Navbar() {
     return (
         <div className='top'> 
             <div className='topLeft'>
-                <img src={chomik} />
+                <img src={chomik} alt="chomikers"/>
                     <p>TechBox</p>
                 </div>
             <div className='topCenter'>
                 <ul className='navbarList'>
-                <li className='navbarListItem'>Strona główna</li>
-                <li className='navbarListItem'>Zgłoś problem</li>
-                <li className='navbarListItem'>Kontakt</li>
+                <Link to="/">
+                    <li className='navbarListItem'>Strona główna</li>
+                </Link>
+                <Link to="/ticket/1">
+                    <li className='navbarListItem'>Zgłoś problem</li>
+                </Link>
+                <Link to="/contact">
+                    <li className='navbarListItem'>Kontakt</li>
+                </Link>
                 </ul>
             </div>
             <div className='topRight'>
