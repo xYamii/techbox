@@ -14,7 +14,7 @@ function Navbar() {
                 <Link to="/">
                     <li className='navbarListItem'>Strona główna</li>
                 </Link>
-                <Link to="/ticket/1">
+                <Link to="/report">
                     <li className='navbarListItem'>Zgłoś problem</li>
                 </Link>
                 <Link to="/contact">
@@ -23,7 +23,9 @@ function Navbar() {
                 </ul>
             </div>
             <div className='topRight'>
+            <Link to="/tickets">
                 Panel serwisanta
+            </Link>
             </div>
         </div>
     )

@@ -2,7 +2,10 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import {Route, Routes} from 'react-router-dom';
-import Ticket from './components/Ticket';
+import Tickets from './components/Tickets';
+import TicketView from './components/TicketView';
+import Report from './components/Report';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,8 +14,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/ticket/:id" element={<Ticket />}/>
+        <Route path="/report" element={<Report />} />
+        <Route path="/tickets" element={<Tickets />}/>
+        <Route path="/contact" element={<Contact />}/>
+        <Route path="/ticket/:id" element={<TicketView />}/>
       </Routes>
     </div>
   );

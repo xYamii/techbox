@@ -70,3 +70,60 @@ h1 {
   margin: 0 auto;
   width: 70%;
 }
+.formbuilder-text,
+.formbuilder-text-label {
+  padding: 1rem;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 2px solid black;
+  background-color: rgb(150, 150, 150);
+  border-radius: 6px;
+  text-align: left;
+  padding: 10px;
+}
+.ticket {
+  font-size: 10px;
+  width: 40%;
+  border: 2px solid black;
+  background-color: rgb(150, 150, 150);
+  border-radius: 6px;
+  padding: 12px 20px;
+  text-align: left;
+  margin: 10px;
+}
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ticket p {
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ticket button {
+  margin: 2px;
+  background-color: rgb(129, 70, 240);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.ticket button:hover {
+  background-color: rgb(129, 70, 200);
+}
+.ticket button.delete {
+  background-color: rgb(238, 67, 55);
+}
+.ticket button.delete:hover {
+  background-color: rgb(223, 57, 45);
+}
